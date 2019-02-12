@@ -42,6 +42,9 @@ namespace FancyCalc
             double z = 0;
             string[] words = new string[2];
 
+            if (expression == "")
+                throw new ArgumentNullException();
+
             foreach (char i in expression)
             {
                 for(int j = 0; j < arr.Length; j++)
