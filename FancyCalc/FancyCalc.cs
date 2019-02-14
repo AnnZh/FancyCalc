@@ -43,7 +43,7 @@ namespace FancyCalc
             string[] words = new string[2];
 
             if (expression == "")
-                throw new ArgumentNullException();
+                throw new ArgumentException();
 
             foreach (char i in expression)
             {
